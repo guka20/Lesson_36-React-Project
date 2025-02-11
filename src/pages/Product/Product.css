@@ -1,0 +1,14 @@
+.product-page {
+  padding: 20px;
+}
+.image-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.image-list img {
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.image-list img:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}

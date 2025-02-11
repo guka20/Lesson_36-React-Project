@@ -1,0 +1,15 @@
+.products-layout {
+  padding: 20px;
+}
+.products-layout .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.products-layout .products-list {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  gap: 30px;
+}
