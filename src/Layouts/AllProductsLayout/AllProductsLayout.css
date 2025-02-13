@@ -1,0 +1,16 @@
+.all-products-layout {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.all-products-layout .header-place {
+  font-size: 1.4rem;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.all-products-layout .products-list {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  justify-content: space-between;
+  gap: 30px;
+}
