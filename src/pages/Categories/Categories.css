@@ -1,0 +1,19 @@
+.category-page {
+  padding: 20px;
+}
+
+.category-page .title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.category-page .categories-list {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  justify-content: space-between;
+  row-gap: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .category-page .categories-list {
+    grid-template-columns: repeat(4, max-content);
+  }
+}

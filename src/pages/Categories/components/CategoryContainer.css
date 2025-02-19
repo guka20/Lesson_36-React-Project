@@ -1,0 +1,16 @@
+.category-container {
+  padding: 20px 10px;
+  background-color: #f3f4f6;
+  width: 200px;
+  line-height: 25px;
+}
+.category-container .title {
+  font-size: 1.2rem;
+}
+.category-container .link {
+  color: #8696f6;
+  text-decoration: none;
+}
+.category-container .link:hover {
+  text-decoration: underline;
+}
