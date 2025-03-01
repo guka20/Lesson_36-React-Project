@@ -1,11 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import MainLayout from "./Layouts/MainLayout/MainLayout";
-import Home from "./pages/Home/Home";
-import Categories from "./pages/Categories/Categories";
-import Product from "./pages/Product/Product";
-import Products from "./pages/Products/Products";
-import Category from "./pages/Category/Category";
+import{ MainLayout} from "@/Layouts";
+import { Home, Categories, Category, Product, Products } from "@/pages";
+
 const MyRouters = () => {
   return (
     <Routes>

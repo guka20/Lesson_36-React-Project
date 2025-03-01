@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { getDataFromDB } from "../../helper/api.js";
-import AllProductsLayout from "../../Layouts/AllProductsLayout/AllProductsLayout";
-import CartItem from "../../components/CartItem/CartItem.jsx";
+import { getDataFromDB } from "@/helper/api.js";
+import { AllProductsLayout } from "@/Layouts";
+import { CartItem } from "@/components";
 import "./Products.css";
 const Products = () => {
   const [allProducts, setAllProduct] = useState([]);

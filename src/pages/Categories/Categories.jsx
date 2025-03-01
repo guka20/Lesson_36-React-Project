@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CategoryContainer from "./components/CategoryContainer";
 import "./Categories.css";
-import { getAllCategories } from "../../helper/api";
+import { getAllCategories } from "@/helper/api";
 const Categories = () => {
   const [categoriesList, setCategoriesList] = useState([]);
 

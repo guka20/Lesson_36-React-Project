@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import CartItem from "../../components/CartItem/CartItem";
-import ProductsLayout from "../../Layouts/ProductsLayout/ProductsLayout";
-import { getDataFromDB } from "../../helper/api";
-import Loading from "../../components/Loading/Loading";
+import React, { useEffect, useState } from "react";
+import { ProductsLayout } from "@/Layouts";
+import { getDataFromDB } from "@/helper/api";
+import { Loading, CartItem } from "@/components";
+
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [trending, setTrending] = useState([]);

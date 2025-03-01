@@ -5,6 +5,9 @@
   top: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.nav-bar.dark {
+  background-color: #1e293b;
+}
 .nav-bar .nav-container {
   width: 95%;
   margin: 0 auto;
@@ -17,7 +20,9 @@
   text-decoration: none;
   color: black;
 }
-
+.nav-bar.dark .nav-container .logo {
+  color: white;
+}
 .nav-bar .nav-container .search-bar {
   display: flex;
   align-items: center;
@@ -26,7 +31,9 @@
   width: 350px;
   padding: 10px 15px;
   border: 2px solid rgb(61, 83, 235);
+  background-color: transparent;
 }
+
 .nav-bar .nav-container .search-bar .search-btn {
   height: 39.2px;
   width: 39.2px;
@@ -48,13 +55,18 @@
   color: black;
   font-size: 1.3rem;
 }
+.nav-bar.dark .nav-container .nav-right-side a {
+  color: white;
+}
 
 .nav-bar .nav-container .nav-right-side .nav-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-
+.nav-bar.dark .nav-container .nav-right-side .nav-btn {
+  color: white;
+}
 .nav-bar .nav-container .nav-right-side .nav-btn * {
   display: block;
 }

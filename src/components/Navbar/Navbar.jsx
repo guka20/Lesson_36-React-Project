@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { LuMoon } from "react-icons/lu";
+import { IoSunnyOutline } from "react-icons/io5";
+
+import { IsDarkContext } from "@/Contexts/IsDarkProvider";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { isDark, setIsDark } = useContext(IsDarkContext);
   return (
-    <nav className="nav-bar">
+    <nav className={isDark ? "nav-bar dark" : "nav-bar"}>
       <div className="nav-container">
         <Link className="logo" to="/">
           Shopify
@@ -33,8 +37,11 @@ const Navbar = () => {
           <button className="cart-btn nav-btn">
             <AiOutlineShoppingCart size={25} />
           </button>
-          <button className="theme-btn nav-btn">
-            <LuMoon size={25} />
+          <button
+            className="theme-btn nav-btn"
+            onClick={() => setIsDark(!isDark)}
+          >
+            {isDark ? <IoSunnyOutline size={25} /> : <LuMoon size={25} />}
           </button>
         </div>
       </div>

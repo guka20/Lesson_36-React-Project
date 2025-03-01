@@ -5,7 +5,7 @@ const ProductsLayout = ({ children, title }) => {
     <div className="products-layout">
       <p className="title">{title}</p>
       <div className="products-list">{children}</div>
-    </div>
+    </div> 
   );
 };
 
