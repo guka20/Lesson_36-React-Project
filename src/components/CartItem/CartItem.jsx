@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IoCartOutline } from "react-icons/io5";
-
 import "./CartItem.css";
 import { Link } from "react-router-dom";
+import { IsDarkContext } from "@/Contexts/IsDarkProvider";
+
 const CartItem = ({
   id,
   thumbnail,
@@ -11,10 +12,11 @@ const CartItem = ({
   price,
   discountPercentage,
 }) => {
+  const { isDark } = useContext(IsDarkContext);
   let newPrice = price - (price * discountPercentage) / 100;
   newPrice = newPrice.toFixed(2);
   return (
-    <div className="cart-item">
+    <div className={isDark ? "cart-item dark" : "cart-item"}>
       <div className="image-place">
         <img src={thumbnail} />
       </div>

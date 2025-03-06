@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { ProductsLayout } from "@/Layouts";
 import { getDataFromDB } from "@/helper/api";
 import { Loading, CartItem } from "@/components";
-
+import { IsDarkContext } from "@/Contexts/IsDarkProvider";
+import "./Home.css";
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [trending, setTrending] = useState([]);
   const [newArrival, setNewArrival] = useState([]);
+  const { isDark } = useContext(IsDarkContext);
   useEffect(() => {
     setIsLoading(true);
     getDataFromDB(8, 0)
@@ -22,7 +24,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className={isDark ? "dark" : "light"}>
       {isLoading ? (
         <Loading />
       ) : (
