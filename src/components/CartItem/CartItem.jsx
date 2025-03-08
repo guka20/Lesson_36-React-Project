@@ -10,7 +10,7 @@ const CartItem = ({
   category,
   title,
   price,
-  discountPercentage,
+  discountPercentage, 
 }) => {
   const { isDark } = useContext(IsDarkContext);
   let newPrice = price - (price * discountPercentage) / 100;

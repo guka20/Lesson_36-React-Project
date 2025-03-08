@@ -1,0 +1,10 @@
+.category-filter-page {
+  padding-top: 20px;
+}
+.category-filter-page.dark {
+  background-color: #1e293b;
+}
+.category-filter-page .address-style {
+  font-size: 20px;
+  margin-left: 20px;
+}

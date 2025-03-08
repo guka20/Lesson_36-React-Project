@@ -4,7 +4,7 @@ export const IsDarkContext = createContext();
 
 const IsDarkProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(false);
-  return (
+  return ( 
     <IsDarkContext.Provider value={{ isDark, setIsDark }}>
       {children}
     </IsDarkContext.Provider>

@@ -1,7 +1,10 @@
 .category-page {
   padding: 20px;
+  height: 35vw;
 }
-
+.category-page.dark {
+  background-color: #1e293b;
+}
 .category-page .title {
   font-size: 1.2rem;
   margin-bottom: 10px;

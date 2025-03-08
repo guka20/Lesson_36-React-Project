@@ -9,7 +9,7 @@ const Home = () => {
   const [trending, setTrending] = useState([]);
   const [newArrival, setNewArrival] = useState([]);
   const { isDark } = useContext(IsDarkContext);
-  useEffect(() => {
+  useEffect(() => { 
     setIsLoading(true);
     getDataFromDB(8, 0)
       .then((resp) => resp)

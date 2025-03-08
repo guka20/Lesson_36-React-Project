@@ -62,7 +62,7 @@
   gap: 10px;
 }
 .cart-item .textures .price-precentage .old-price {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5); 
   text-decoration: line-through;
 }
 .cart-item.dark .textures .price-precentage .old-price{

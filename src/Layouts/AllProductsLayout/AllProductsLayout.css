@@ -2,11 +2,18 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+.all-products-layout.dark {
+  background-color: #1e293b;
+}
 .all-products-layout .header-place {
   font-size: 1.4rem;
   padding: 5px 0;
   display: flex;
   justify-content: space-between;
+}
+.all-products-layout.dark .header-place .sorting-select {
+  background-color: #1e293b;
+  color: white;
 }
 .all-products-layout .products-list {
   display: grid;

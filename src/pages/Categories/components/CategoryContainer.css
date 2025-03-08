@@ -4,6 +4,9 @@
   width: 200px;
   line-height: 25px;
 }
+.category-container.dark {
+  background-color: rgb(71 85 105);
+}
 .category-container .title {
   font-size: 1.2rem;
 }
