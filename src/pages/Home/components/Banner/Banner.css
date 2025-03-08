@@ -1,0 +1,43 @@
+.banner {
+  background-color: rgb(227, 237, 246);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.banner.dark {
+  background-color: rgb(71, 85, 105);
+}
+.banner .textures {
+  line-height: 50px;
+}
+.banner .textures .start-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.banner .textures .title {
+  font-size: 3rem;
+  max-width: 400px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.banner .textures .subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.banner .textures .subtitle span {
+  color: red;
+}
+.banner .textures .shop-now {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.banner .textures .shop-now:hover {
+  background-color: rgb(61, 83, 235);
+  color: white;
+}
