@@ -3,7 +3,7 @@ import { ProductsLayout } from "@/Layouts";
 import { getDataFromDB } from "@/helper/api";
 import { Loading, CartItem } from "@/components";
 import { IsDarkContext } from "@/Contexts/IsDarkProvider";
-import { Banner } from "./components";
+import { Banner, Services } from "./components";
 
 import "./Home.css";
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
   const [newArrival, setNewArrival] = useState([]);
   const { isDark } = useContext(IsDarkContext);
   useEffect(() => {
-    setIsLoading(true);
+    // setIsLoading(true);
     getDataFromDB(8, 0)
       .then((resp) => resp)
       .then((data) => setTrending(data));
@@ -32,6 +32,7 @@ const Home = () => {
       ) : (
         <>
           <Banner />
+          <Services />
           <ProductsLayout title="Trending Products">
             {trending.map((product) => {
               return (

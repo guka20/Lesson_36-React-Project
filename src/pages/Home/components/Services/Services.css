@@ -1,0 +1,19 @@
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.services-list .single-service {
+  background-color: rgb(243, 244, 246);
+  width: 300px;
+  padding: 20px 25px;
+  line-height: 25px;
+}
+.services-list.dark .single-service {
+  background-color: rgb(71, 85, 105);
+}
+.services-list .single-service .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
