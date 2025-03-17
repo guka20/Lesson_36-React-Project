@@ -26,4 +26,27 @@ async function getSignleCategory(slug) {
   return resp.data;
 }
 
-export { getDataFromDB, getSingleProduct, getAllCategories, getSignleCategory };
+async function getAccessToken(userCridential) {
+  const resp = await axios.post("auth/login", userCridential);
+  const data = await resp.data;
+  return data.accessToken;
+}
+
+async function authUserUsingToken(accessToken) {
+  const resp = await axios.get("auth/me", {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+  const data = resp.data;
+  return data;
+}
+
+export {
+  getDataFromDB,
+  getSingleProduct,
+  getAllCategories,
+  getSignleCategory,
+  getAccessToken,
+  authUserUsingToken,
+};

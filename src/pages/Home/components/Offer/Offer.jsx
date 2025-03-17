@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import offerImage from "@/assets/banner.jpg";
+import { IsDarkContext } from "@/Contexts/IsDarkProvider";
 import "./Offer.css";
 
 const Offer = () => {
+  const { isDark } = useContext(IsDarkContext);
   return (
-    <div className="offer-container">
+    <div className={isDark ? "offer-container dark" : "offer-container"}>
       <div className="image-place">
         <img src={offerImage} className="offer-image" />
       </div>

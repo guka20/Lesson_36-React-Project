@@ -18,6 +18,9 @@
   justify-content: center;
   background-color: #e3edf6;
 }
+.offer-container.dark .offer-textures {
+  background-color: #475569;
+}
 .offer-container .offer-textures h1 {
   width: 55%;
   text-align: center;

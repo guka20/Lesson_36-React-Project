@@ -1,0 +1,66 @@
+.login-container {
+  background-color: white;
+  position: relative;
+  padding: 30px;
+}
+.login-container .close-login {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.login-container .login-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  word-spacing: 10px;
+}
+.login-container .text-field-place {
+  width: max-content;
+  margin-top: 10px;
+  position: relative;
+  margin: 10px auto 0 auto;
+}
+
+.login-container .text-field-place .text-field-icon {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-container .text-field-place input {
+  width: 350px;
+  font-size: 1.1rem;
+  height: 25px;
+  padding: 5px 0px 5px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+.login-container .text-field-place input::placeholder {
+  color: rgba(0, 0, 0, 0.284);
+}
+.login-container .login-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.login-container .register {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.login-container .register a {
+  color: #3b82f6;
+  text-decoration: none;
+}
