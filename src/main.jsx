@@ -6,14 +6,17 @@ import "./index.css";
 import IsDarkProvider from "./Contexts/IsDarkProvider.jsx";
 import IsLoginOpenProvider from "./Contexts/IsLoginOpen.jsx";
 import IsAuthProvider from "./Contexts/IsAuth.jsx";
+import AuthDataProvider from "./Contexts/AuthData.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <IsDarkProvider>
         <IsLoginOpenProvider>
-          <IsAuthProvider>
-            <App />
-          </IsAuthProvider>
+          <AuthDataProvider>
+            <IsAuthProvider>
+              <App />
+            </IsAuthProvider>
+          </AuthDataProvider>
         </IsLoginOpenProvider>
       </IsDarkProvider>
     </BrowserRouter>

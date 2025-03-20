@@ -6,10 +6,13 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { IsLoginOpenContext } from "@/Contexts/IsLoginOpen";
 import { IsAuthContext } from "@/Contexts/IsAuth";
 import { authUserUsingToken, getAccessToken } from "@/helper/api";
+import { IsDarkContext } from "@/Contexts/IsDarkProvider";
 
 const LoginModal = () => {
   const { setIsLoginOpen } = useContext(IsLoginOpenContext);
   const { setUserData } = useContext(IsAuthContext);
+  const { isDark } = useContext(IsDarkContext);
+  const { setIsAuth } = useContext(IsAuthContext);
   const [userInfo, setUserInfo] = useState({
     username: "",
     password: "",
@@ -24,12 +27,13 @@ const LoginModal = () => {
           .then((data) => setUserData(data));
         setIsLoginOpen(false);
         localStorage.setItem("accessToken", data);
+        setIsAuth(true);
       });
   };
 
   return (
     <div className="dark-screen">
-      <div className="login-container">
+      <div className={isDark ? "login-container dark" : "login-container"}>
         <button className="close-login" onClick={() => setIsLoginOpen(false)}>
           <IoIosClose />
         </button>
